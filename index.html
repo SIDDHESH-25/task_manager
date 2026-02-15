@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="title">Task Manager</section>
+    <section class="main">
+        <div class="table">
+            <table>
+                <caption>Task List</caption>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Title</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Priority</th>
+                        <th>actions</th>
+
+                    </tr>
+                </thead>
+                <tbody id="task-body">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="filter" >
+            <button class="action-btn" onclick="filter(this)">Filter</button>
+            <select name="filter" id="filter" hidden="true">
+                <option value="None">None</option>
+                <option value="show_Done"> Show Done</option>
+                <option value="show_InProgress"> Show InProgress</option>
+                <option value="Show_NotBegin"> Show Not Begin</option>
+            </select>
+        </div>
+        <div class="add-edit">
+
+            <div class="addition">
+                <div class="add-icon">
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                </div>
+                <button onclick="addRow(this)" class="action-btn add-button">Add Tasks</button>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+<!-- <tr>
+                        <td class="Sno">1</td>
+                        <td><Input class="task" type="text" placeholder="task here"></Input></td>
+                        <td><input class="date" type="date" placeholder="date"></td>
+                        <td><select class="Status" name="Status" id="Status" placeholder="Status">
+                                <option value="Done">Done</option>
+                                <option value="In progress">In progress</option>
+                                <option value="Not begin">Not begin</option>
+
+                            </select></td>
+                        <td><select class="Priority" name="Priority" 
+                            placeholder="Priority"id="Priority">
+                                <option value="High">Done</option>
+                                <option value="Moderate-High">Moderate-High</option>
+                                <option value="Moderate">"Moderate"</option>
+                                <option value="Moderate-Low">Moderate-Low</option>
+                                <option value="Low">Low</option>
+
+                            </select></td>
+                        <td>
+                            <button onclick="deleteRow(this)"  class="delete-btn">Delete</button>
+                            <button onclick="doneRow(this)" class="done-btn">Done</button>
+                            <button onclick="addStudent(this)" class="Create-btn">Create</button>
+                            
+                        </td>
+                    </tr> -->
