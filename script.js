@@ -102,9 +102,9 @@ function addRow() {
 
                             </select></td>
                         <td><select class="Priority" name="Priority" id="Priority">
-                                <option value="High">Done</option>
+                                <option value="High">High</option>
                                 <option value="Moderate-High">Moderate-High</option>
-                                <option value="Moderate">"Moderate"</option>
+                                <option value="Moderate">Moderate</option>
                                 <option value="Moderate-Low">Moderate-Low</option>
                                 <option value="Low">Low</option>
 
@@ -376,6 +376,7 @@ function update(btn) {
     renderAllTasks();
 
 }
+
 
 
 
